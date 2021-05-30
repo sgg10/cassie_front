@@ -7,7 +7,7 @@
       <!--Toggler-->
       <navbar-toggle-button @click.native="showSidebar"> </navbar-toggle-button>
       <router-link class="navbar-brand" to="/">
-        <img :src="logo" class="navbar-brand-img" alt="..." />
+        <h1 class="title">Cassie</h1>
       </router-link>
 
       <slot name="mobile-right">
@@ -75,7 +75,8 @@
           <div class="row">
             <div class="col-6 collapse-brand">
               <router-link to="/">
-                <img :src="logo" />
+                <!-- <img :src="logo" /> -->
+                <h1 class="title">Cassie</h1>
               </router-link>
             </div>
             <div class="col-6 collapse-close">
@@ -136,3 +137,16 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+@font-face {
+  font-family: cassieFont;
+  src: url("../../assets/vendor/nucleo/fonts/Amaranth-Bold.ttf");
+}
+
+.title {
+  font-family: cassieFont;
+  color: #74dba3;
+  font-size: 50px;
+}
+</style>

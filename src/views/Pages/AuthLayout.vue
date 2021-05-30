@@ -9,7 +9,8 @@
     >
       <div slot="brand" class="navbar-wrapper">
         <b-navbar-brand>
-          <img src="img/brand/white_logo.png" />
+          <!-- <img src="img/brand/white_logo.png" /> -->
+          <h1 class="title">Cassie</h1>
         </b-navbar-brand>
       </div>
 
@@ -176,5 +177,16 @@ $scaleSize: 0.8;
 
 .main-content .zoomOut {
   animation-name: zoomOut8;
+}
+
+@font-face {
+  font-family: cassieFont;
+  src: url("../../assets/vendor/nucleo/fonts/Amaranth-Bold.ttf");
+}
+
+.title {
+  font-family: cassieFont;
+  color: white;
+  font-size: 30px;
 }
 </style>
